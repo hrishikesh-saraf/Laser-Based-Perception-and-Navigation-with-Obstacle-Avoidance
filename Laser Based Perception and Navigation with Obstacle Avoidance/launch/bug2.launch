@@ -1,0 +1,8 @@
+<launch>
+	<node name="stage" pkg="stage_ros" type="stageros"
+	      args="$(find lab2)/world/playground.world" />
+	<node name="evader" pkg="lab2" type="evader2.py" />
+	<node name="rviz" pkg="rviz" type="rviz" />
+	
+	      
+</launch>
